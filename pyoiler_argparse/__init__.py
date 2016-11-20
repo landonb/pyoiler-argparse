@@ -19,7 +19,7 @@ from xdg import BaseDirectory
 import chjson
 #import schematics
 
-import timedelta_wrap
+import pyoiler_timedelta
 
 from pyoiler_logging import *
 
@@ -166,7 +166,7 @@ class Simple_Script_Base(object):
 			self.go_main()
 
 		info('Script completed in %s' % (
-			timedelta_wrap.timedelta_wrap.time_format_elapsed(time_0),
+			pyoiler_timedelta.time_format_elapsed(time_0),
 		))
 
 		# If we run as a script, be sure to return an exit code.
