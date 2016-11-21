@@ -1,4 +1,4 @@
-# Last Modified: 2016.11.19 /coding: utf-8
+# Last Modified: 2016.11.21 /coding: utf-8
 # Copyright: © 2011, 2015-2016 Landon Bouma.
 # License: GPLv3. See LICENSE.txt.
 #  vim:tw=0:ts=4:sw=4:noet
@@ -166,7 +166,7 @@ class Simple_Script_Base(object):
 			self.go_main()
 
 		info('Script completed in %s' % (
-			pyoiler_timedelta.time_format_elapsed(time_0),
+			pyoiler_timedelta.timedelta_wrap.time_format_elapsed(time_0),
 		))
 
 		# If we run as a script, be sure to return an exit code.
