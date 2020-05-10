@@ -84,6 +84,20 @@ setup(
     # https://packaging.python.org/en/latest/requirements.html
     #install_requires=['peppercorn'],
     #install_requires=[],
+    install_requires=[
+        'pyxdg',
+        # HOTH packages:
+        'human-friendly_pedantic-timedelta',
+        # FIXME: Missing packages (not published):
+        # - Though really: This package should be retired.
+        #   You should use Click!!
+        'chjson',
+        # A logging library... adds timestamps, prints facility,
+        # columnizes output (so columns line up, like in a table),
+        # adds a few convenience functions... but not itching to
+        # publish if this package is being deprecated....
+        'pyoiler_logging',
+    ],
 
     # List additional groups of dependencies here (e.g. development
     # dependencies). You can install these using the following syntax,
