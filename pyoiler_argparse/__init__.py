@@ -17,7 +17,6 @@ import time
 from xdg import BaseDirectory
 
 import chjson
-#import schematics
 
 import pyoiler_timedelta
 
