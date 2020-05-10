@@ -18,7 +18,7 @@ from xdg import BaseDirectory
 
 import chjson
 
-import pyoiler_timedelta
+from pedantic_timedelta import PedanticTimedelta
 
 from pyoiler_logging import *
 
@@ -165,7 +165,7 @@ class Simple_Script_Base(object):
 			self.go_main()
 
 		info('Script completed in %s' % (
-			pyoiler_timedelta.timedelta_wrap.time_format_elapsed(time_0),
+			PedanticTimedelta.time_format_elapsed(time_0),
 		))
 
 		# If we run as a script, be sure to return an exit code.
